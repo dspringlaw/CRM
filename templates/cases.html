@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cases</title>
+</head>
+<body>
+    <h1>Cases</h1>
+    <a href="/">Home</a> | <a href="/cases/new">Add Case</a>
+    <ul>
+        {% for case in cases %}
+        <li>{{ case.case_number }} - {{ case.client.name }} - {{ case.status }}</li>
+        {% else %}
+        <li>No cases yet</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

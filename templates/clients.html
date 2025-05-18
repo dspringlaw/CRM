@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Clients</title>
+</head>
+<body>
+    <h1>Clients</h1>
+    <a href="/">Home</a> | <a href="/clients/new">Add Client</a>
+    <ul>
+        {% for client in clients %}
+        <li>{{ client.name }} - {{ client.email }} - {{ client.phone }}</li>
+        {% else %}
+        <li>No clients yet</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

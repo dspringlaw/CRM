@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Add Case</title>
+</head>
+<body>
+    <h1>Add Case</h1>
+    <a href="/cases">Back to Cases</a>
+    <form method="post">
+        <label>Case Number: <input type="text" name="case_number" required></label><br>
+        <label>Client:
+            <select name="client_id">
+                {% for client in clients %}
+                <option value="{{ client.id }}">{{ client.name }}</option>
+                {% endfor %}
+            </select>
+        </label><br>
+        <label>Status: <input type="text" name="status"></label><br>
+        <label>Description:<br><textarea name="description"></textarea></label><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
