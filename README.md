@@ -15,14 +15,15 @@ This repository contains a very small Customer Relationship Management (CRM) sys
 
 ## Setup
 
-1. Clone this repository
-2. Install dependencies:
+1. Install Git ([https://git-scm.com/downloads](https://git-scm.com/downloads))
+2. Clone this repository
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the application:
+4. Run the application:
 
 ```bash
 python app.py
